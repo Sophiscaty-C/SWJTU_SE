@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "vOqusf6VqE6O18boc2b4k6V7CDQalVwEGTko2AjjGN7efuw1hlO1IgumDhTLzN/B5G2ZF4ka/T7urOxfdqFNpA==",
+  "success": true,
+  "projectFilePath": "D:\\Web\\Web_Homework\\Web_Homework\\Web_Homework.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\GIGABYTE\\.nuget\\packages\\jieba.net\\0.42.2\\jieba.net.0.42.2.nupkg.sha512",
+    "C:\\Users\\GIGABYTE\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\GIGABYTE\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\GIGABYTE\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\GIGABYTE\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
+    "C:\\Users\\GIGABYTE\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Users\\GIGABYTE\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\GIGABYTE\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.7.0\\system.security.cryptography.protecteddata.4.7.0.nupkg.sha512",
+    "C:\\Users\\GIGABYTE\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
+    "C:\\Users\\GIGABYTE\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
+    "C:\\Users\\GIGABYTE\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
