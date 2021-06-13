@@ -38,11 +38,10 @@ namespace Web_Homework
         }
         public static void ReadFile(string path)
         {
-            int i = 0;
             string[] files = Directory.GetFiles(path, "*.txt");
-            foreach (string file in files)
+            for (int i = 0; i < files.Length; i++)
             {
-                StreamReader reader = new StreamReader(file);
+                StreamReader reader = new StreamReader(files[i]);
                 string line;
                 ArrayList text = new ArrayList();
                 while ((line = reader.ReadLine()) != null)
@@ -52,9 +51,9 @@ namespace Web_Homework
                 DelChar(ref text);
                 ApartWords(ref text);
                 string[] sText = (string[])text.ToArray(typeof(string));
-                string savePath = @"D:\Web\Web_Homework\Chn_af\" + "ChnNews_After_" + i.ToString() + ".txt";
+                string result = System.Text.RegularExpressions.Regex.Replace(files[i], @"[^0-9]+", "");
+                string savePath = @"D:\Web\Web_Homework\Chn_af\" + "ChnNews_After_" + result + ".txt";
                 File.WriteAllLines(savePath, sText, Encoding.UTF8);
-                i++;
             }
         }
         #region//测试用
@@ -144,7 +143,26 @@ namespace Web_Homework
                 string str = text[i].ToString().Trim(' ').Replace(" ", "");
                 var segmenter = new JiebaSegmenter();
                 var segments = segmenter.CutForSearch(str);
-                text[i] = string.Join("/", segments);
+                string[] x=segments.ToArray();
+                List<string> y = new List<string>();
+                int flag = 1;
+                for(int j=0;j<x.Length;j++)
+                {
+                    flag = 1;
+                    foreach(var k in list)
+                    {
+                        if(x[j]==k.ToString())
+                        {
+                            flag = 0;
+                            break;
+                        }
+                    }
+                    if(flag==1)
+                    {
+                        y.Add(x[j]);
+                    }
+                }
+                text[i] = string.Join(" ", y);
             }
         }
     }
